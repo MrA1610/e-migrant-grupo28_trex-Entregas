@@ -1,0 +1,18 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model Frontend.Pages.Migrantes.IndexModel
+@{
+}
+<h1 align="center"> ¡Ingresa con tu cuenta de Google! </h1>
+<br>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="176147769913-0mkg790na0pg9shsc4ha3krtt42d4qmn.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="/Home" align="center" ></div>
+</br>
+<div align="center">
+<button class="btn btn-primary"> Go home </button></div>
+
+
+@*<h1>Bienvenido @User.Identity.Name</h1> *@
